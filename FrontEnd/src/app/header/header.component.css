@@ -1,0 +1,26 @@
+.app-header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 100%; /* Increase the max-width to 100% for full width */
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.user-info button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.user-info button:hover {
+  text-decoration: underline;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}

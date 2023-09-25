@@ -1,0 +1,54 @@
+<p>add-customer-manual works!</p>
+<div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Customer Bill Data</h5>
+        <form (ngSubmit)="submitForm()" #customerForm="ngForm" class="custom-form">
+          <div class="form-group">
+            <label for="customerName">Customer Name</label>
+            <input type="text" class="form-control custom-input" id="customerName" name="customerName" [(ngModel)]="customerData.customerName" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="customerId">Customer ID</label>
+            <input type="text" class="form-control custom-input" id="customerId" name="customerId" [(ngModel)]="customerData.customerId" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="unitConsumed">Unit Consumed</label>
+            <input type="number" class="form-control custom-input" id="unitConsumed" name="unitConsumed" [(ngModel)]="customerData.unitConsumed" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="billStartDate">Bill Start Date</label>
+            <input type="date" class="form-control custom-input" id="billStartDate" name="billStartDate" [(ngModel)]="customerData.billStartDate" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="billDueDate">Bill Due Date</label>
+            <input type="date" class="form-control custom-input" id="billDueDate" name="billDueDate" [(ngModel)]="customerData.billDueDate" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control custom-input" id="email" name="email" [(ngModel)]="customerData.email" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="telephone">Telephone</label>
+            <input type="tel" class="form-control custom-input" id="telephone" name="telephone" [(ngModel)]="customerData.telephone" required>
+          </div>
+          <div class="form-group">
+            <label for="billStatus">Bill Status</label>
+            <input type="status" class="form-control custom-input" id="billStatus" name="billStatus" [(ngModel)]="customerData.billStatus" required>
+          </div>
+  
+  
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+  
