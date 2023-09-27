@@ -1,0 +1,94 @@
+<!-- <app-header></app-header>
+
+
+<div>
+    <div>
+        <button (click)="navigateToCustomerBill()">
+            Customer 
+        </button>
+    </div>
+    <div>
+        <button (click)="navigateToTransactionTracking()">
+            Transaction Tracking  
+        </button>
+    </div>
+</div>
+
+<div class="Bill-method-selector">
+    <button (click)="showDropdown = true">List of All Bills</button>
+    <select id="bill-list" name="bill-list" (change)="navigateToPaidBills($event)">
+        <option value="Choose">Bills </option>
+        <option value="paid" >Paid</option>
+        <option value="unpaid" >UnPaid</option>
+    </select>
+</div>
+ -->
+<!-- 
+ <app-header></app-header>
+
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary" (click)="navigateToCustomerBill()">
+                Customer
+            </button>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" (click)="navigateToTransactionTracking()">
+                Transaction Tracking
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="Bill-method-selector">
+    <button (click)="showDropdown = true">List of All Bills</button>
+    <select id="bill-list" name="bill-list" (change)="navigateToPaidBills($event)">
+        <option value="Choose">Bills </option>
+        <option value="paid" >Paid</option>
+        <option value="unpaid" >UnPaid</option>
+    </select>
+</div>
+ -->
+ <app-header></app-header>
+
+ <!-- Buttons for navigation -->
+ <div class="container mt-4">
+     <div class="row">
+         <div class="col-md-6">
+             <button class="btn btn-primary btn-block" (click)="navigateToCustomerBill()">
+                 Customer
+             </button>
+         </div>
+         <div class="col-md-6">
+             <button class="btn btn-primary btn-block" (click)="navigateToTransactionTracking()">
+                 Transaction Tracking
+             </button>
+         </div>
+     </div>
+ </div>
+ 
+ <!-- Center the "List of All Bills" button -->
+ <div class="container mt-4">
+     <div class="row justify-content-center">
+         <div class="col-md-6">
+             <button class="btn btn-primary btn-block" (click)="showDropdown = true">
+                 List of All Bills
+             </button>
+         </div>
+     </div>
+ </div>
+ 
+ <div class="container mt-4">
+     <div class="row justify-content-center">
+         <div class="col-md-6">
+             <select class="form-control" id="bill-list" name="bill-list" (change)="navigateToPaidBills($event)">
+                 <option value="Choose">Bills</option>
+                 <option value="paid">Paid</option>
+                 <option value="unpaid">UnPaid</option>
+             </select>
+         </div>
+     </div>
+ </div>
+ 

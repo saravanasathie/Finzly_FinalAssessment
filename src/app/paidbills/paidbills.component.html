@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div>
+   <ul>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+              <th>Transaction Id</th>
+              <th>Rate</th>
+              <th>Discount</th>
+              <th>Discount on Time</th>
+              <th>Transaction Mode</th>
+              <th>Status</th>
+              <th>Total Amount</th>
+              <th>Customer ID</th>
+              <th>Name</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let trans of paidBills">
+            <td>{{trans.tId}}</td>  
+            <td>{{trans.rate}}</td>
+              <td>{{trans.discount}}</td>
+              <td>{{trans.endDate}}</td>
+              <td>{{trans.transactionMethod}}</td>
+              <td>{{trans.status}}</td>
+              <td>{{trans.totalAmount}}</td>
+              <td>{{trans.customer.cid}}</td>
+              <td>{{trans.customer.name}}</td>
+              <td>{{trans.customer.phoneNumber}}</td>
+              <td>{{trans.customer.emailId}}</td>
+              
+          </tr>
+      </tbody>
+      
+      </table>
+    </ul>
+  </div>

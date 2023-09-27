@@ -1,0 +1,73 @@
+<!-- <app-header></app-header><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6"> 
+      <div class="d-flex justify-content-start align-items-center">
+        <button (click)="navigateToAddCustomerManual()">Add Customer</button>
+        <button (click)="navigateToAddCustomerCSV()">Add Customer In Bulk</button>
+        <button (click)="navigateToAddBill()">Add Bill</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<table>
+
+  <thead>
+    <th>Customer Id</th>
+    <th>Customer Name</th>
+    <th>Phone Number</th>
+    <th>Email Id</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of CustomerData; let i = index">
+      <td>{{ item.cid }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.phoneNumber }}</td>
+      <td>{{ item.emailId }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<app-header></app-header>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <!-- Buttons for Navigation -->
+      <div class="d-flex justify-content-start align-items-center">
+        <button class="btn btn-primary mr-2" (click)="navigateToAddCustomerManual()">Add Customer</button>
+        <button class="btn btn-primary mr-2" (click)="navigateToAddCustomerCSV()">Add Customer In Bulk</button>
+        <button class="btn btn-primary" (click)="navigateToAddBill()">Add Bill</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Customer Id</th>
+            <th>Customer Name</th>
+            <th>Phone Number</th>
+            <th>Email Id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of CustomerData; let i = index">
+            <td>{{ item.cid }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.phoneNumber }}</td>
+            <td>{{ item.emailId }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> 

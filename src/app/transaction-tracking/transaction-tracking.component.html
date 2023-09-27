@@ -1,0 +1,21 @@
+<app-header></app-header>
+<br>
+
+<table class="table table-bordered table-hover">
+
+    <thead>
+        <th>Transaction ID</th>
+        <th>Bill Amount</th>
+        <th>Paid Date</th>
+        <th>Transaction Method</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of Transaction">
+            
+            <td>{{item.tId}}</td>
+            <td>{{item.totalAmount}}</td>
+            <td>{{item.startDate | date:'dd-MM-yyyy'}}</td>
+            <td>{{item.transactionMethod}}</td>  
+        </tr>
+    </tbody>
+</table>

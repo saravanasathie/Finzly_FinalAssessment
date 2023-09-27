@@ -1,0 +1,58 @@
+<app-header></app-header>
+<div class="transaction-details">
+    <h2>Invoice: </h2>
+
+    <div class="payment-method-selector">
+      <label for="paymentMethod">Payment Method:</label>
+      <select id="paymentMethod" name="paymentMethod" [(ngModel)]="selectedPaymentMethod">
+        <option value="cash">Cash</option>
+        <option value="online">Online</option>
+      </select>
+    </div>
+
+    <table class="table">
+      <tr>
+        <td><strong>Transaction ID:</strong></td>
+        <td>{{ transaction.tId }}</td>
+      </tr>
+      <tr>
+        <td><strong>Customer Name:</strong></td>
+        <td>{{ transaction.customer.name }}</td>
+      </tr>
+      <tr>
+        <td><strong>Unit Consumption:</strong></td>
+        <td>{{ transaction.unitConsumption }}</td>
+      </tr>
+      <tr>
+        <td><strong>Total Amount:</strong></td>
+        <td>{{ transaction.totalAmount }}</td>
+      </tr>
+      <tr>
+        <td><strong>Rate:</strong></td>
+        <td>{{ transaction.rate }}</td>
+      </tr>
+      <tr>
+        <td><strong>Reference Number:</strong></td>
+        <td>{{ transaction.referenceNumber }}</td>
+      </tr>
+      <tr>
+        <td><strong>Start Date:</strong></td>
+        <td>{{ transaction.startDate }}</td>
+      </tr>
+      <tr>
+        <td><strong>End Date:</strong></td>
+        <td>{{ transaction.endDate }}</td>
+      </tr>
+      <tr *ngIf="selectedPaymentMethod === 'cash'">
+        <td><strong>Cash Mode Selected</strong></td>
+      </tr>
+      <tr *ngIf="selectedPaymentMethod === 'online'">
+        <td><strong>Online Mode Selected</strong></td>
+      </tr>
+
+    </table>
+
+    <div class="pay-button-container">
+      <button  [disabled]="!selectedPaymentMethod">PAY</button>
+    </div>
+  </div>
